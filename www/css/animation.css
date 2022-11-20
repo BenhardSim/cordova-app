@@ -1,0 +1,7 @@
+.loadingAnimation
+{
+	position: absolute;
+    left: -100px;
+    top: 0px;
+    z-index: 1;
+}

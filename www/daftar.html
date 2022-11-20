@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script><meta name="viewport" content="initial-scale=1">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="jquery/jquery-1.11.3.min.js"></script>
+		<script src="js/mainUrl.js"></script>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+		<script src="jquery/jquery-1.11.3.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+		<script>
+		
+			function openMenu(par)
+			{
+				window.open(par,"_blank");
+			}
+			
+		</script>
+		<style>
+			.fullSize
+			{
+				width : 90%;
+				position : relative;
+				left : 0%;
+			}
+			.oddCell
+			{
+				background-color : white;
+			}
+			
+			.evenCell
+			{
+				background-color : lightGray;
+			}
+			
+			.header
+			{
+				background-color : gray;
+				color : white;
+			}
+			
+			td 
+			{
+				direction: ltr;
+				margin:auto;
+				text-align:justify;
+				word-break: break-word;
+				white-space: pre-line;
+				overflow-wrap: break-word;
+				-ms-word-break: break-word;
+				word-break: break-word;
+				word-break: break-word;
+				-ms-hyphens: auto;
+				-moz-hyphens: auto;
+				-webkit-hyphens: auto;
+				hyphens: auto;			
+			}
+
+			table 
+			{ 
+				table-layout:fixed;
+				width:100%;
+			}
+		</style>
+			
+	</head>
+	<body>
+		<div id="imgLoading"></div>
+		<header class="main">
+		
+			<h1 class="logo"><a href="index.html" class="ss-list">DAFTAR</a></h1>
+			<a href="#menu" class="menu-trigger ss-icon">&#xED50;</a>
+			<nav><div w3-include-html="menu.html"></div></nav>
+		
+		</header>
+		<div class="content">
+			<section class="intro">
+				<ul data-role="listview" data-inset="true" data-split-theme="b">
+					<!-- <li class="fullSize">
+						<input type="hidden" id="idCustomer" name="idCustomer">
+						<label style="font-weight : bold; text-align: center">Input Data</label>
+						<label for="noKtp">No. KTP</label>
+						<input type="text" id="noKtp" name="noKtp">
+						<label for="nama">Nama</label>
+						<input type="text" id="nama" name="nama">
+						<label for="alamat">Alamat</label>
+						<textarea id="alamat" name="alamat"></textarea>
+						<div class="rightTable"></div>
+						<input type="button" value="Simpan" onclick="insertData();">
+					</li> -->
+					<br>
+					<li class="fullSize">
+						<label style="font-weight : bold; text-align: center">Daftar Ruangan</label>
+						<div id="dataCustomer"></div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		
+		<script>
+
+			includeHTML();
+					
+		</script>
+		
+		<script src="js/example-jRespond.min.js"></script>
+		<script src="js/home.js"></script>
+</body>
+</html>
